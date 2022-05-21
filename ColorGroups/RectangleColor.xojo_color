@@ -1,0 +1,9 @@
+#tag ColorGroup
+	CodeName=RectangleColor
+	#tag Color
+		Type=1
+		Platform=1
+		Light=FFFFFF27
+		Dark=1E1E1E00
+	#tag EndColor
+#tag EndColorGroup
