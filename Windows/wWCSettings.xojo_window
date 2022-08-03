@@ -838,6 +838,17 @@ End
 		End Sub
 	#tag EndEvent
 #tag EndEvents
+#tag Events Button1
+	#tag Event
+		Sub Pressed()
+		  //Exit the application completely in the first run if user has no API key or WooCommerce setup yet.
+		  Quit
+		  
+		  
+		  
+		End Sub
+	#tag EndEvent
+#tag EndEvents
 #tag ViewBehavior
 	#tag ViewProperty
 		Name="Resizeable"
