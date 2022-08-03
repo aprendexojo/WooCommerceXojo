@@ -1,5 +1,5 @@
 Type=Desktop
-RBProjectVersion=2022.011
+RBProjectVersion=2022.02
 MinIDEVersion=20210300
 OrigIDEVersion=00000000
 MenuBar=MainMenuBar;MainMenuBar.xojo_menu;&h000000002B0FCFFF;&h0000000000000000;false
@@ -83,6 +83,7 @@ UseBuildsFolder=True
 HiDPI=True
 DarkMode=True
 CopyRedistNextToWindowsEXE=False
+IncludePDB=False
 IsWebProject=False
 LinuxBuildArchitecture=1
 MacBuildArchitecture=4

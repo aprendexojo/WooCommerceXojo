@@ -623,7 +623,7 @@ Begin DesktopWindow wWCSettings
             TabIndex        =   0
             TabPanelIndex   =   2
             TabStop         =   True
-            Text            =   "In order to Frö to properly work, it requires some settings for accessing the WooCommerce endpoint. Please, make sure to define them in the following panel."
+            Text            =   "In order to Frö to properly work, it requires some settings for accessing the WooCommerce endpoint. Please, make sure to define them in the following panel. You will need API keys if you don't have them yet you can also exit."
             TextAlignment   =   0
             TextColor       =   &c6F6F6F00
             Tooltip         =   ""
@@ -659,7 +659,39 @@ Begin DesktopWindow wWCSettings
             TabPanelIndex   =   2
             TabStop         =   True
             Tooltip         =   ""
-            Top             =   306
+            Top             =   293
+            Transparent     =   False
+            Underline       =   False
+            Visible         =   True
+            Width           =   80
+         End
+         Begin DesktopButton Button1
+            AllowAutoDeactivate=   True
+            Bold            =   False
+            Cancel          =   False
+            Caption         =   "Exit"
+            Default         =   True
+            Enabled         =   True
+            FontName        =   "System"
+            FontSize        =   0.0
+            FontUnit        =   0
+            Height          =   19
+            Index           =   -2147483648
+            InitialParent   =   "gbMainSettingsInfo"
+            Italic          =   False
+            Left            =   266
+            LockBottom      =   False
+            LockedInPosition=   False
+            LockLeft        =   True
+            LockRight       =   False
+            LockTop         =   True
+            MacButtonStyle  =   0
+            Scope           =   0
+            TabIndex        =   2
+            TabPanelIndex   =   2
+            TabStop         =   True
+            Tooltip         =   ""
+            Top             =   314
             Transparent     =   False
             Underline       =   False
             Visible         =   True
@@ -803,6 +835,17 @@ End
 	#tag Event
 		Sub Pressed()
 		  ppPrefsPanel.SelectedPanelIndex = 0
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events Button1
+	#tag Event
+		Sub Pressed()
+		  //Exit the application completely in the first run if user has no API key or WooCommerce setup yet.
+		  Quit
+		  
+		  
+		  
 		End Sub
 	#tag EndEvent
 #tag EndEvents
